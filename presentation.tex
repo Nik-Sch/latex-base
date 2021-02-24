@@ -1,0 +1,101 @@
+\documentclass[aspectratio=169,mathserif, ttserif, Nike, c]{tuberlinbeamer}
+\usepackage{cite}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb,amsfonts,nicefrac}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{todonotes}
+\usepackage{glossaries-extra}
+\usepackage{layouts}
+\usepackage{spreadtab}
+\usepackage{numprint}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[noabbrev]{cleveref}
+% \usepackage[section,above]{placeins}
+\usepackage[per-mode=symbol]{siunitx}
+\DeclareSIUnit{\bit}{b}
+\DeclareSIUnit{\byte}{B}
+
+\newcommand{\glsfull}[1]{\glsxtrlong{#1} (\glsxtrshort{#1})}
+
+\newacronym{IP}{IP}{Internet Protocol}
+\newacronym{CCI}{CCI}{Command Control Interface}
+\newacronym{UDP}{UDP}{User Datagram Protocol}
+\newacronym{TCP}{TCP}{Transmission Control Protocol}
+\newacronym{UDP/IP}{UDP/IP}{User Datagram Protocol over Internet Protocol}
+\newacronym{TCP/IP}{TCP/IP}{Transmission Control Protocol over Internet Protocol}
+\newacronym{RDMA}{RDMA}{Remote Direct Memory Access}
+\newacronym{RoCEv2}{RoCEv2}{RDMA over Converged Ethernet v2}
+\newacronym{RoCE}{RoCE}{RDMA over Converged Ethernet}
+\newacronym{RRoCE}{RRoCE}{Routable RoCE}
+\newacronym{CPU}{CPU}{Central Processing Unit}
+\newacronym{FPGA}{FPGA}{Field Programmable Gate Array}
+\newacronym{ICMP}{ICMP}{Internet Control Message Protocol}
+\newacronym{ARP}{ARP}{Address Resolution Protocol}
+\newacronym{MAC}{MAC}{Medium Access Control}
+\newacronym{BTH}{BTH}{Base Transport Header}
+\newacronym{GRH}{GRH}{Global Routing Header}
+\newacronym{LRH}{LRH}{Local Routing Header}
+\newacronym{ICRC}{ICRC}{Invariant Cyclic Redundancy Check}
+\newacronym{PCIe}{PCIe}{Peripheral Component Interconnect Express}
+\newacronym{GPU}{GPU}{Graphical Processing Uni}
+\newacronym{NAA}{NAA}{network-attached accelerators}
+\newacronym{HLS}{HLS}{high level synthesis}
+\newacronym{CLB}{CLB}{Configurable Logic Blocks}
+\newacronym{BRAM}{BRAM}{Block Random Access Memory}
+\newacronym{API}{API}{Application programming interface}
+\newacronym{RFC}{RFC}{Request For Comment}
+\newacronym{ALM}{ALM}{Adaptive Logic Module}
+\newacronym{FCS}{FCS}{Frame Check Sequence}
+\newacronym{RC}{RC}{Reliable Connection}
+\newacronym{CM}{CM}{Communication Management}
+\newacronym{PSN}{PSN}{Package Sequence Number}
+\newacronym{HSDB}{HSDB}{High Speed Databus}
+\newacronym{AXI}{AXI}{Advanced eXtensible Interface Bus}
+\newacronym{MTU}{MTU}{Maximum Transmission Unit}
+\newacronym{ECC}{ECC}{Error-Correcting Code}
+
+
+
+
+\makeatletter
+\graphicspath{{figures/}{diagrams/}{plots/}}
+\makeatother
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\title{Title}
+\author{Niklas Schelten}
+
+\begin{document}
+
+\maketitle
+\begin{frame}[c]{Field Prorgammable Gate Arrays (FPGAs)}
+    \begin{columns}
+        \begin{column}{.6\textwidth}
+            \begin{itemize}
+                \setlength\itemsep{1em}
+                \item Programmable Hardware
+                \item Logic Gates implemented as Lookup Tables in form of MUXs
+                \item SRAM used to alter functionality
+                \item Additional DSP blocks + direct SRAM
+                \item Interconnection + Clock pathes
+            \end{itemize}
+        \end{column}
+
+        \begin{column}{.4\textwidth}
+            \\
+            \includegraphics[width=.8\textwidth]{integration.pdf}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+
+\begin{frame}[c]{Thank you!}
+\end{frame}
+\end{document}

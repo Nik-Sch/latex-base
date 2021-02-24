@@ -1,0 +1,3 @@
+[submodule "tub-presentation"]
+	path = tub-presentation
+	url = git@gitlab.tubit.tu-berlin.de:hennig/tub-presentation.git
