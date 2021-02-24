@@ -17,7 +17,7 @@ withDocker:
 watch:
 	while true; do \
 			make all -j20; \
-		inotifywait -qre close_write,delete --exclude ".*\.git.*" --exclude "out.*" .; \
+		inotifywait -qre close_write,delete --excludei ".git*|out*" .; \
 	done
 
 all: paper.pdf presentation.pdf
